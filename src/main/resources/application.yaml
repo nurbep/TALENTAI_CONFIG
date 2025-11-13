@@ -1,3 +1,14 @@
 spring:
   application:
     name: TALENTAI_CONFIG
+  profiles:
+   active: native
+    #active: git
+  cloud:
+    config:
+      server:
+       native:
+        search-locations: "classpath:/config"
+        # search-locations: "file:///Users//eazybytes//Documents//config"
+server:
+  port: 8071
